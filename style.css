@@ -1,0 +1,165 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    display: grid;
+    place-content: center;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.nft__box {
+    background-color: hsl(216, 50%, 16%);
+    padding: 1.5rem;
+    color: hsl(0, 0%, 100%);
+    border-radius: 1rem;
+    display: grid;
+    max-width: 22rem;
+}
+
+.nft__pricing {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nft__description {
+    color: hsl(215, 51%, 70%);
+}
+
+.nft__description p {
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+.nft__box h1 {
+    margin-block: 1.25rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.nft__box .nft__image #kurcina {
+    height: 304px;
+    width: 19rem;
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 0.5rem;
+
+}
+
+.nft__pricing .price {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: hsl(178, 100%, 50%);
+}
+
+.nft__pricing .time__left {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: hsl(215, 51%, 70%);
+}
+
+.nft__pricing .price p {
+    font-weight: 600;
+}
+
+.nft__pricing {
+    margin-top: 1.75rem;
+    margin-bottom: 1.25rem;
+}
+
+.nft__box hr {
+    border: 0.0001rem solid hsl(215, 32%, 27%);
+    width: 100%;
+    margin-top: 0.2rem;
+    display: grid;
+    place-content: center;
+    width: 19rem;
+    margin-bottom: 0.75rem;
+}
+
+.nft__box a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+.nft__box a:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.nft__footer {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 1rem;
+    color: hsl(215, 51%, 70%);
+    margin-block: 0.25rem;
+}
+
+.nft__footer .creator__avatar img {
+    width: 2rem;
+    border-radius: 50%;
+    border: 1px solid hsl(0, 0%, 100%);
+}
+
+.image__hover {
+    background-color: hsl(178, 100%, 50%);
+    width: 19rem;
+    height: 19rem;
+    aspect-ratio: 1/1;
+    opacity: 1;
+    display: none;
+    place-content: center;
+    border-radius: 0.5rem;
+    position: absolute;
+    transition: opacity;
+    transition-duration: 2s;
+}
+
+.image__hover a {
+    padding: 8rem;
+}
+
+.image__hover .icon {
+    width: 3rem;
+}
+
+
+.nft__image:hover .image__hover {
+    display: grid;
+    background-color: hsla(178, 100%, 50%, 0.6);
+}
