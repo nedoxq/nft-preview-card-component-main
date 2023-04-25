@@ -49,6 +49,7 @@ body {
     border-radius: 1rem;
     display: grid;
     max-width: 22rem;
+    box-shadow: 8px 8px 22px -11px rgba(0, 0, 0, 0.16);
 }
 
 .nft__pricing {
@@ -162,4 +163,8 @@ body {
 .nft__image:hover .image__hover {
     display: grid;
     background-color: hsla(178, 100%, 50%, 0.6);
+}
+
+#image__icon {
+    border-radius: 0.5rem;
 }
